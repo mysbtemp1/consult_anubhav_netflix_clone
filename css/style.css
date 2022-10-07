@@ -153,9 +153,9 @@ body
 }
 ul li
 {
-    list-style: none;
-    padding: 15px;
-    color: #fff;
+    list-style: none !important;
+    padding: 15px !important;
+    color: #fff !important;
 }
 .d-inline
 {
@@ -172,11 +172,11 @@ ul li
 
 @media only screen and (max-width: 1150px) 
 {
-    /*.navbar*/
-    /*{*/
-    /*    !* width: 100%; *!*/
-    /*    display: none;*/
-    /*}   */
+    .navbar-tabs
+    {
+        /* width: 100%; */
+        display: none;
+    }
 
     .left-nav, .right-nav
     {
@@ -192,11 +192,11 @@ ul li
 
     .togglebtn
     {
-        display: block;
+        display: inline-block;
         font-size: 2rem;
         color: white;
-        /* margin-top: 18px; */
-        padding: 20px;
+        /*margin-top: 18px;*/
+        /*padding: 20px;*/
         right: 20px;
     }
 
@@ -254,4 +254,8 @@ ul li
 {
     height: 35px;
     width: 35px;
+}
+header
+{
+    border-bottom: #292929 solid 1px;
 }
